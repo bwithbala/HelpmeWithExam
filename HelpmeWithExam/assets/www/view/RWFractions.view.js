@@ -1,7 +1,7 @@
-sap.ui.jsview("view.CoffeeList", {
+sap.ui.jsview("view.RWFractions", {
 
     getControllerName: function() {
-        return "view.CoffeeList";
+        return "view.RWFractions";
     },
 
     createContent: function(oController) {

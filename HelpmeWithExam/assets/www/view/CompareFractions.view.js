@@ -1,11 +1,11 @@
-sap.ui.jsview("view.snakeGame", {
+sap.ui.jsview("view.CompareFractions", {
 
 	/** Specifies the Controller belonging to this View. 
 	* In the case that it is not implemented, or that "null" is returned, this View does not have a Controller.
 	* @memberOf view.snakeGame
 	*/ 
 	getControllerName : function() {
-		return "view.snakeGame";
+		return "view.CompareFractions";
 	},
 
 	/** Is initially called once after the Controller has been instantiated. It is the place where the UI is constructed. 

@@ -27,7 +27,7 @@ sap.ui.jsview("view.Menu", {
         return new sap.m.Page({
             customHeader: new sap.m.Bar({
                 contentLeft: [new sap.m.Image("ui5Logo", {
-                    src: "img/IMG_0756.jpg",
+                    src: "img/IMG_0756.JPG",
                     width: "35px",
                     height: "35px"
                 })],
