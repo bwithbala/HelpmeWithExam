@@ -13,14 +13,14 @@ sap.ui.jsview("view.App", {
 
         this.app.addMasterPage(sap.ui.jsview("Menu", "view.Menu"));
 
-        this.app.addDetailPage(sap.ui.xmlview("Info", "view.Info"));
-        this.app.addDetailPage(sap.ui.jsview("CoffeeList", "view.CoffeeList"));
-        this.app.addDetailPage(sap.ui.jsview("snakeGame", "view.snakeGame"));
+        
+        this.app.addDetailPage(sap.ui.jsview("RWFractions", "view.RWFractions"));
+        this.app.addDetailPage(sap.ui.jsview("CompareFractions", "view.CompareFractions"));
 
         // navigate to the first page in both master and detail areas.
         // the toMaster must be called after calling the toDetail, because both of them point to the same reference in phone and 
         // the real first page that will be shown in phone is the page in master area. 
-        this.app.toDetail("CoffeeList");
+        this.app.toDetail("RWFractions");
         this.app.toMaster("Menu");
 
         return new sap.m.Shell("Shell", {
