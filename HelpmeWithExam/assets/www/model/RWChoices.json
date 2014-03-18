@@ -1,0 +1,30 @@
+{
+    "RWChoices": [{
+        "selected": true,
+        "visible": true,
+        "text": "1/4 * 2/2 = 2/8",
+        "enabled": true
+    }, {
+        "selected": true,
+        "visible": true,
+        "text": "1/4 * 3/3 = 3/12",
+        "enabled": true
+    }, {
+        "selected": true,
+        "visible": true,
+        "text": "1/4 * 4/4 = 4/16",
+        "enabled": true
+    }, {
+        "selected": true,
+        "visible": true,
+        "text": "1/4 * 5/5 = 5/20",
+        "enabled": true
+    }, {        
+        "selected": true,
+        "visible": true,
+        "text": "1/4 * 6/6 = 6/24,
+        "enabled": true
+    }]
+}
+
+
