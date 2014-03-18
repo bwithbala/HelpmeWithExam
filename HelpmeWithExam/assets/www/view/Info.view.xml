@@ -1,0 +1,46 @@
+<core:View xmlns:core="sap.ui.core"
+    controllerName="view.Info"
+    xmlns="sap.m" >
+
+    <Page
+        enableScrolling="false"
+        title="{i18n>WELCOME_TITLE}" >
+
+        <footer>
+
+            <Bar>
+            </Bar>
+        </footer>
+
+        <content>
+
+            <VBox
+                alignItems="Center"
+                justifyContent="Center" >
+
+                <Text
+                    class="welcomeText"
+                    text="{i18n>WELCOME_INFO}" >
+                </Text>
+
+                <Link
+                    href="http://blog.mypro.de/tag/ui5boilerplate/"
+                    text="http://blog.mypro.de" >
+                </Link>
+
+                <Text
+                    class="welcomeText"
+                    text="UI5 SplitApp Boilerplate on GitHub:" >
+                </Text>
+
+                <Link
+                    href="https://github.com/6of5/UI5SplitApp-Boilerplate"
+                    text="https://github.com/6of5/UI5SplitApp-Boilerplate" >
+                </Link>
+
+                <Image src="img/114_iPhone-Retina_Web_Clip.png" />
+            </VBox>
+        </content>
+    </Page>
+
+</core:View>
