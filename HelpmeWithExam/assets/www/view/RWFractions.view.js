@@ -118,13 +118,19 @@ sap.ui.jsview("view.RWFractions", {
 				);    	
 		
         var oModel = new sap.ui.model.json.JSONModel("model/RWChoices.json");
-        sap.ui.getCore().setModel(oModel );
+       // sap.ui.getCore().setModel(oModel );
 /*        oModel.setData({
                    modelData : Data
             });		*/
         alert("oModel", oModel);
         var RWChoices = oModel.getData();
 		   alert("RWChoices.length", RWChoices.length);
+		   
+		   var oModel1 = this.getModel(new sap.ui.model.json.JSONModel("model/RWChoices.json"))		   
+		   alert("oModel1", oModel1);   
+		   var RWChoices1 = oModel.getData();
+		   alert("RWChoices1.length", RWChoices1.length);
+		   
 	       for (var i = 0, len = RWChoices.length; i < len; i++) {
 	    		oFlexBox.addItem(
      	    	    new sap.m.CheckBox({
