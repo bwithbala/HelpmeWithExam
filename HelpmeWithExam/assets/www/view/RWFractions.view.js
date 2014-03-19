@@ -14,11 +14,10 @@ sap.ui.jsview("view.RWFractions", {
             numberUnit: "Calories"
             	
         });
-
         
         var oList = new sap.m.List({});
         oList.bindAggregation("items", "/Coffee", oListTemplate);*/
-        
+       
 
 		// Create items
 /*		var oItem1 = new sap.m.Image({
@@ -101,7 +100,7 @@ sap.ui.jsview("view.RWFractions", {
 				 new sap.m.Label({
 					text: "1/4",
 					design: "Bold",
-					layoutData: new sap.m.FlexItemData({growFactor: 1})
+					layoutData: new sap.m.FlexItemData({growFactor: 2})
 				})		
 				
 				);
@@ -111,7 +110,7 @@ sap.ui.jsview("view.RWFractions", {
 				 new sap.m.Label({
      				text: "Choose from Below",
 					design: "Bold",
-					layoutData: new sap.m.FlexItemData({growFactor: 1})
+					layoutData: new sap.m.FlexItemData({growFactor: 3})
 				})		
 				);    	
 
