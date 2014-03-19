@@ -119,9 +119,10 @@ sap.ui.jsview("view.RWFractions", {
 		
         var oModel = new sap.ui.model.json.JSONModel("model/RWChoices.json");
         sap.ui.getCore().setModel(oModel );
-        oModel.setData({
+/*        oModel.setData({
                    modelData : Data
-            });		
+            });		*/
+        alert("oModel", oModel);
         var RWChoices = oModel.getData();
 		   alert("RWChoices.length", RWChoices.length);
 	       for (var i = 0, len = RWChoices.length; i < len; i++) {
