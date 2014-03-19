@@ -84,7 +84,10 @@ sap.ui.jsview("view.RWFractions", {
     	
 		       
 
-		var oFlexBox = new sap.m.FlexBox();
+		var oFlexBox = new sap.m.FlexBox(
+				{
+					direction: "Column"
+				});
 		
 		oFlexBox.addItem(
 				new sap.m.Label({
@@ -113,6 +116,19 @@ sap.ui.jsview("view.RWFractions", {
 					layoutData: new sap.m.FlexItemData({growFactor: 3})
 				})		
 				);    	
+		
+        var oModel = new sap.ui.model.json.JSONModel("model/RWChoices.json");
+		var RWChoices = oModel.getData();
+	       for (var i = 0, len = RWChoices.length; i < len; i++) {
+	    		oFlexBox.addItem(
+     	    	    new sap.m.CheckBox({
+		    			    selected : RWChoices[i].selected,
+		    				visible  : RWChoices[i].visible,
+		    				text     : RWChoices[i].text, 
+		    				enabled  : RWChoices[i].enabled  })	    				
+	    		
+	    		);	    	    
+	    	}				
 
         return new sap.m.Page({
             title: "Read Write Fractions",
