@@ -73,23 +73,7 @@ sap.ui.jsview("view.RWFractions", {
 		var cbOption6 = new sap.m.CheckBox({selected:true, visible: true, text: "3/4 * 3/3 = 2/8", enabled: true});		*/
 		
 		
-		
-/*		var oItem2 = new sap.m.Image({
-			src: "images/mark2.png",
-			alt: "test image",
-			decorative: false,
-			densityAware: false,
-			layoutData: new sap.m.FlexItemData({growFactor: 2})
-		});
-
-		var oItem3 = new sap.m.Image({
-			src: "images/mark3.png",
-			alt: "test image",
-			decorative: false,
-			densityAware: false,
-			layoutData: new sap.m.FlexItemData({growFactor: 3})
-		});
-*/
+	
 		// Create a vertical flexbox with items
 		var oVBox1 = new sap.m.VBox("vbox1", {
 			items:[
