@@ -118,7 +118,11 @@ sap.ui.jsview("view.RWFractions", {
 				);    	
 		
         var oModel = new sap.ui.model.json.JSONModel("model/RWChoices.json");
-		var RWChoices = oModel.getData();
+        sap.ui.getCore().setModel(oModel );
+        oModel.setData({
+                   modelData : Data
+            });		
+        var RWChoices = oModel.getData();
 		   alert("RWChoices.length", RWChoices.length);
 	       for (var i = 0, len = RWChoices.length; i < len; i++) {
 	    		oFlexBox.addItem(
