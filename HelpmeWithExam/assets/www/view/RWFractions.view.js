@@ -168,7 +168,7 @@ sap.ui.jsview("view.RWFractions", {
 	    		    }]
 	    		};
 
-	    		 var oModel = new sap.ui.model.json.JSONModel();
+/*	    		 var oModel = new sap.ui.model.json.JSONModel();
 	    		 oModel.setData(data);
 	    		 sap.ui.getCore().setModel(oModel);	       
 	    		 
@@ -183,7 +183,7 @@ sap.ui.jsview("view.RWFractions", {
 	    			    				enabled  : RWChoices[i].enabled  })	    				
 	    		    		
 	    		    		);	    	    
-	    		    	}		    		 
+	    		    	}		*/    		 
 	    		 
 
         return new sap.m.Page({
