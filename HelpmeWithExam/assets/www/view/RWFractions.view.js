@@ -117,7 +117,7 @@ sap.ui.jsview("view.RWFractions", {
 				})		
 				);    	
 		
-        var oModel = new sap.ui.model.json.JSONModel("model/RWChoices.json");
+/*        var oModel = new sap.ui.model.json.JSONModel("model/RWChoices.json");
         alert("oModel", oModel);
         var RWChoices = oModel.getData();
 		   alert("RWChoices.length", RWChoices.length);
@@ -136,7 +136,55 @@ sap.ui.jsview("view.RWFractions", {
 		    				enabled  : RWChoices[i].enabled  })	    				
 	    		
 	    		);	    	    
-	    	}				
+	    	}	*/
+	       
+	       
+	       var data = {
+	    		    "RWChoices": [{
+	    		        "selected": true,
+	    		        "visible": true,
+	    		        "text": "1/4 * 2/2 = 2/8",
+	    		        "enabled": true
+	    		    }, {
+	    		        "selected": true,
+	    		        "visible": true,
+	    		        "text": "1/4 * 3/3 = 3/12",
+	    		        "enabled": true
+	    		    }, {
+	    		        "selected": true,
+	    		        "visible": true,
+	    		        "text": "1/4 * 4/4 = 4/16",
+	    		        "enabled": true
+	    		    }, {
+	    		        "selected": true,
+	    		        "visible": true,
+	    		        "text": "1/4 * 5/5 = 5/20",
+	    		        "enabled": true
+	    		    }, {        
+	    		        "selected": true,
+	    		        "visible": true,
+	    		        "text": "1/4 * 6/6 = 6/24,
+	    		        "enabled": true
+	    		    }]
+	    		};
+
+	    		 var oModel = new sap.ui.model.json.JSONModel();
+	    		 oModel.setData(data);
+	    		 sap.ui.getCore().setModel(oModel);	       
+	    		 
+	    	        var RWChoices = oModel.getData();
+	    			   alert("RWChoices.length", RWChoices.length);
+	    		       for (var i = 0, len = RWChoices.length; i < len; i++) {
+	    		    		oFlexBox.addItem(
+	    	     	    	    new sap.m.CheckBox({
+	    			    			    selected : RWChoices[i].selected,
+	    			    				visible  : RWChoices[i].visible,
+	    			    				text     : RWChoices[i].text, 
+	    			    				enabled  : RWChoices[i].enabled  })	    				
+	    		    		
+	    		    		);	    	    
+	    		    	}		    		 
+	    		 
 
         return new sap.m.Page({
             title: "Read Write Fractions",
